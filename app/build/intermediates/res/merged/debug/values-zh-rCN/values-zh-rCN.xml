@@ -27,7 +27,7 @@
     <string name="info3">点一下显示隐藏图案。</string>
     <string name="info4">在时间用完之前，\n必须收集到两个炸弹。</string>
     <string name="info5">\n  - 随机图案\n\n  - 炸弹\n\n  - 时间冻结</string>
-    <string name="more">\n更多游戏\n\n 还有更多好玩的游戏 ...</string>
+    <string name="more">\n游戏排名\n\n 查看游戏排名</string>
     <string msgid="146198913615257606" name="search_menu_title">"搜索"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="title_activity_pikachu">哆啦A梦连连看</string>

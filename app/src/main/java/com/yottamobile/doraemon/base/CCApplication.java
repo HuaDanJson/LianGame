@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.support.multidex.MultiDexApplication;
 
 import com.blankj.utilcode.util.Utils;
+import com.yottamobile.doraemon.utils.DBRankingBeanDaoUtils;
+import com.yottamobile.doraemon.utils.DBScoreBeanDaoUtils;
 import com.yottamobile.doraemon.utils.ToastHelper;
 
 
@@ -24,6 +26,8 @@ public class CCApplication extends MultiDexApplication {
         super.onCreate();
         INSTANCE = this;
         Utils.init(this);
+        DBRankingBeanDaoUtils.Init(this);
+        DBScoreBeanDaoUtils.Init(this);
         ToastHelper.init(this);
     }
 }

@@ -16,7 +16,7 @@ public class WelcomeActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
         //第一：默认初始化
-        Bmob.initialize(this, "d9298669ee86258190d40ec2f2a9349b");
+        Bmob.initialize(this, "f234cdf0e315906726f19e377fced71e");
         if (BmobUser.isLogin()) {
             toActivity(Pikachu.class);
         } else {

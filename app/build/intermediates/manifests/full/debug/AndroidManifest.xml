@@ -45,6 +45,14 @@
         <activity
             android:name="com.yottamobile.doraemon.activity.LoginActivity"
             android:screenOrientation="landscape" />
+        <activity
+            android:name="com.yottamobile.doraemon.activity.RankingActivity"
+            android:screenOrientation="landscape" />
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.yottamobile.doraemon.BmobContentProvider" >
+        </provider>
 
         <meta-data
             android:name="android.arch.lifecycle.VERSION"

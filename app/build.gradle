@@ -22,7 +22,26 @@ android {
     }
 }
 
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:27.1.1'
+}
 
+//greenDao----start//
+apply plugin: 'org.greenrobot.greendao'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.0'
+    }
+}
+greendao {
+    schemaVersion 1   //<--数据库的版本，用于升级时候进行更改
+    daoPackage 'com.aidebar.greendaotest.gen'     //存放自动生成代码的包
+    targetGenDir 'src/main/java'                  //...
+}
+//greenDao----end//
 
 dependencies {
     compile files('libs/FlurryAgent.jar')

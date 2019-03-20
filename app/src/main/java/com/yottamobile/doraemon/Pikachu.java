@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.opengl.GLES20;
 import android.os.Bundle;
 import android.os.Handler;
@@ -27,6 +26,7 @@ import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.tencent.mm.sdk.openapi.WXImageObject;
 import com.tencent.mm.sdk.openapi.WXMediaMessage;
 import com.tencent.mm.sdk.platformtools.Util;
+import com.yottamobile.doraemon.activity.RankingActivity;
 import com.yottamobile.doraemon.adapter.ImageAdapter;
 import com.yottamobile.doraemon.data.PikaLevelData;
 import com.yottamobile.doraemon.data.PikaSaveGamer;
@@ -180,8 +180,8 @@ public class Pikachu extends SimpleLayoutGameActivity implements
         }
     }
 
+    @Override
     public EngineOptions onCreateEngineOptions() {
-
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
         WIN_DOW_W = metrics.widthPixels;
@@ -231,17 +231,19 @@ public class Pikachu extends SimpleLayoutGameActivity implements
     }
 
     public static TextureRegion getTextureRegionSoundBG() {
-        if (soundBG)
+        if (soundBG) {
             return regionSoundBG[1];
-        else
+        } else {
             return regionSoundBG[0];
+        }
     }
 
     public static TextureRegion getTextureRegionSoundGame() {
-        if (soundGame)
+        if (soundGame) {
             return regionSoundGame[1];
-        else
+        } else {
             return regionSoundGame[0];
+        }
     }
 
     @Override
@@ -265,6 +267,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
 
         mEngine.registerUpdateHandler(new TimerHandler(1f,
                 new ITimerCallback() {
+                    @Override
                     public void onTimePassed(final TimerHandler pTimerHandler) {
                         mEngine.unregisterUpdateHandler(pTimerHandler);
                         loadResources();
@@ -277,8 +280,9 @@ public class Pikachu extends SimpleLayoutGameActivity implements
                                 .getSound(PikaSaveGamer.KEY_SOUND_BG));
                         setSoundGame(PikaSaveGamer
                                 .getSound(PikaSaveGamer.KEY_SOUND_GAME));
-                        if (isSoundBG())
+                        if (isSoundBG()) {
                             musicBG.play();
+                        }
 
                         isInitialzed = true;
 
@@ -718,6 +722,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
 
     public void detectView(final int view) {
         new Thread() {
+            @Override
             public void run() {
                 Message msg = new Message();
                 msg.arg1 = view;
@@ -825,7 +830,9 @@ public class Pikachu extends SimpleLayoutGameActivity implements
             mScene = levelScene.onCreateScene(this, mCamera);
         } else if (scene == SceneType.HOME) {
             if (adView !=
-                    null) Pikachu.getPikachu().detectView(Pikachu.SHOW_ADS);
+                    null) {
+                Pikachu.getPikachu().detectView(Pikachu.SHOW_ADS);
+            }
             Pikachu.getPikachu().detectView(Pikachu.VISIBLE_ADS);
             PikaHomeScene homeScene = new PikaHomeScene();
             mScene = homeScene.onCreateScene(this, mCamera);
@@ -893,6 +900,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
 
     public final Handler mHandler = new Handler() {
 
+        @Override
         public void handleMessage(android.os.Message msg) {
             final RelativeLayout layout = (RelativeLayout) Pikachu.getPikachu()
                     .findViewById(R.id.layout_render);
@@ -900,7 +908,8 @@ public class Pikachu extends SimpleLayoutGameActivity implements
             switch (msg.arg1) {
                 case SHOW_MORE:
                     //QuMiConnect.getQumiConnectInstance().showOffers(null);
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://support.evanhe.com/download/")));
+//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://support.evanhe.com/download/")));
+                    startActivity(new Intent(Pikachu.this, RankingActivity.class));
                     break;
 
                 case SHOW_INT:
@@ -927,8 +936,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
                         layout.addView(vi);
                     }
 
-                    HorizontalScrollView g = (HorizontalScrollView) vi
-                            .findViewById(R.id.horizontalScrollView1);
+                    HorizontalScrollView g = (HorizontalScrollView) vi.findViewById(R.id.horizontalScrollView1);
                     g.setVisibility(View.VISIBLE);
                     g.setVerticalFadingEdgeEnabled(true);
                     g.setHorizontalFadingEdgeEnabled(true);
@@ -1064,6 +1072,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
                     imageAdap.vData = vData;
 
                     gridview.setOnItemClickListener(new OnItemClickListener() {
+                        @Override
                         public void onItemClick(AdapterView<?> parent, View v,
                                                 int position, long id) {
                             if (vData.get(position).state >= PikaSaveGamer.LV_UNLOCK) {
@@ -1137,6 +1146,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
         return bitmap;
     }
 
+    @Override
     public boolean onSceneTouchEvent(Scene pScene, TouchEvent pSceneTouchEvent) {
 
         switch (pSceneTouchEvent.getAction()) {

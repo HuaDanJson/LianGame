@@ -46,6 +46,10 @@
             android:name=".activity.LoginActivity"
             android:screenOrientation="landscape"/>
 
+        <activity
+            android:name=".activity.RankingActivity"
+            android:screenOrientation="landscape"/>
+
         <provider
             android:name="cn.bmob.v3.util.BmobContentProvider"
             android:authorities="com.yottamobile.doraemon.BmobContentProvider">

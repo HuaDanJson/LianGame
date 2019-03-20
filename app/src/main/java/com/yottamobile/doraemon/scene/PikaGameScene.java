@@ -1,5 +1,13 @@
 package com.yottamobile.doraemon.scene;
 
+import android.graphics.Bitmap;
+import android.view.View;
+
+import com.yottamobile.doraemon.Pikachu;
+import com.yottamobile.doraemon.R;
+import com.yottamobile.doraemon.SceneType;
+import com.yottamobile.doraemon.ui.MButton;
+
 import org.andengine.engine.camera.Camera;
 import org.andengine.entity.modifier.LoopEntityModifier;
 import org.andengine.entity.modifier.ScaleModifier;
@@ -11,17 +19,6 @@ import org.andengine.entity.sprite.Sprite;
 import org.andengine.entity.text.Text;
 import org.andengine.input.touch.TouchEvent;
 import org.andengine.ui.activity.BaseGameActivity;
-
-import com.yottamobile.doraemon.R;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.Uri;
-import android.view.View;
-
-import com.newqm.sdkoffer.QuMiConnect;
-import com.yottamobile.doraemon.Pikachu;
-import com.yottamobile.doraemon.SceneType;
-import com.yottamobile.doraemon.ui.MButton;
 
 public class PikaGameScene extends CustomScene implements IMyScene, OnClickListener {
 
@@ -93,6 +90,7 @@ public class PikaGameScene extends CustomScene implements IMyScene, OnClickListe
 		mDetail.setText(text);
 	}
 
+	@Override
 	public void onClick(ButtonSprite pButtonSprite, float pTouchAreaLocalX, float pTouchAreaLocalY) {
 		Pikachu.getPikachu().detectView(Pikachu.VISIBLE_GAME_SELECT);
 		Pikachu.getPikachu().changeScene(SceneType.HOME);
