@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/jason/.android/build-cache/2af12a69d5e60dd5b42d8fd7721b52d25ed4135c/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/jason/.android/build-cache/2af12a69d5e60dd5b42d8fd7721b52d25ed4135c/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/jason/.android/build-cache/2af12a69d5e60dd5b42d8fd7721b52d25ed4135c/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/jason/.android/build-cache/2af12a69d5e60dd5b42d8fd7721b52d25ed4135c/output/res/layout-v21/notification_action.xml"
+    }
+]

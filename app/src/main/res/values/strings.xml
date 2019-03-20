@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Doraemon Link</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_pikachu">Doraemon Link</string>
+    <string name="app_id">wx60381b16569dc681</string>
+    <string name="about">Programmer\nEvan He\n\nArt\nEvan He\n\n(c)YOTTAMOBILE.COM</string>
+    <string name="info1">How to play?</string>
+    <string name="info2">You can\'t touch it.</string>
+    <string name="info3">Click to show hidden item.</string>
+    <string name="info4">You must collect 2 boom \nBefore time to zero.</string>
+    <string name="info5">- Random item\n\n- Boom item\n\n- Freeze time boom</string>
+</resources>

@@ -1,0 +1,15 @@
+Time=15 Move=2 CountFlip=0 FlipTime=0 CountNoMove=2 AddNoMoveTime=6 CountBoom=0 AddBoomTime=0 BoomTime=0 point1=0 point2=0 point3=0
+type=0 count=0;type=0 count=0;type=0 count=0
+8
+12
+40
+0,0,0,0,0,0,0,0,0,0,0,0
+0,1,1,0,1,1,1,1,0,1,1,0
+0,0,1,1,1,0,0,1,1,1,0,0
+0,1,0,1,0,1,1,0,1,0,1,0
+0,1,0,1,0,1,1,0,1,0,1,0
+0,0,1,1,1,0,0,1,1,1,0,0
+0,1,1,0,1,1,1,1,0,1,1,0
+
+
+

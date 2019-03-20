@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">哆啦A梦连连看</string>
+    <string name="title_activity_pikachu">哆啦A梦连连看</string>
+    <string name="info1">怎么玩 ？</string>
+    <string name="info2">闪烁图标不能碰。</string>
+    <string name="info3">点一下显示隐藏图案。</string>
+    <string name="info4">在时间用完之前，\n必须收集到两个炸弹。</string>
+    <string name="info5">\n  - 随机图案\n\n  - 炸弹\n\n  - 时间冻结</string>
+    <string name="classic">\n经典模式\n\n 指定时间内 完成全部对对碰。</string>
+    <string name="crazy">\n疯狂模式\n\n 未用完的时间累积到下一关。</string> 
+    <string name="more">\n更多游戏\n\n 还有更多好玩的游戏 ...</string> 
+    <string name="classic_mode">经典模式</string>
+    <string name="crazy_mode">疯狂模式</string>
+</resources>

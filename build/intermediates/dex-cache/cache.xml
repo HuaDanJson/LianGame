@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.0/a7782471b2a0de8fec071b8094a8aaf61c46ab70/support-annotations-27.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="a7782471b2a0de8fec071b8094a8aaf61c46ab70">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/support-annotations-27.0.0_e6333d73b6999e2c689ea512f01eff09b9af8a1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/libs/andengine.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="28.0.3"
+        sha1="d8f126a70a00166b3d2b51a1baa24150bfcc4701">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/andengine_2c6b2af084a63286277c8206584300dda9db879e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/ec68a78aa7cb53296297ba4cab7c9dc405f85698/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="b15c6ded887ad967e20bb335c1a121b253c04dce">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_82c3e2809964e11947085bdf20250bd62ee2b8a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/org/jetbrains/annotations/13.0/annotations-13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/annotations-13.0_21edf52381516d443969d7882e7626f8935be4b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/f3b366b0672bae1c238b0dddccaf233e27312c35/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="0e97fa8abc1a1a90087ce8b093d11f1a8e0f1214">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_2adcd591922f64e0f90bd2987b4df2886c80287b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/common-1.0.0_76ab81bf6d4f6ee5891ed450b5b735dc95de4a9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.3/bde0667d7414c16ed62d3cfe993cff7f9d732373/constraint-layout-solver-1.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="bde0667d7414c16ed62d3cfe993cff7f9d732373">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.1.3_02f4b1773cb3557c37234719179d28380c45a236.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/cc16516d49ce5c5382d8b555865e431ecdfe4dd0/output/jars/libs/BmobSDK_3.6.9_20190220.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="7cfc3227ec628bbda447d485954ee38e3e4da7f5">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/BmobSDK_3.6.9_20190220_c0bb08aa4419317457d252d009ff6cc726e8be62.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.60/391695759d8fc80042c2c11bc19fc6f2787be495/kotlin-stdlib-1.2.60.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="391695759d8fc80042c2c11bc19fc6f2787be495">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/kotlin-stdlib-1.2.60_51eb0e2c5709de79f1c68ad2dfbe0d79ef4cb4d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/660ed63a2afa2665123701af873e66582b1272b8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_ebe4cf86aae63e36c3be780786d2b12678ea5002.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/f7d4756e96a2ac9ae6242f9f6973ced9d521c4eb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="62e71cc187cfcb1ba382b05c5f39f5d903973656">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_574d6c45e680cc80bafeef23fc71aa0d47c88c6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.3.0/bcacde6a8ccedcc56c127403d26b76072fe6214d/retrofit-2.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="bcacde6a8ccedcc56c127403d26b76072fe6214d">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/retrofit-2.3.0_1dd4401ff8e08b5bd867a3892fd7aca4826bf7df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/17e2d8716ebe4e3d33cb125360374c6f4b07dfb6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="37d3f9a065d98926697160993997927884e630f2">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_389a012064347743a1e9afa19b47a9f713bbc2ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.12.0/b36f4a04584c0fb0d9af2d3401cdff8dacb1ea54/okhttp-3.12.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="b36f4a04584c0fb0d9af2d3401cdff8dacb1ea54">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/okhttp-3.12.0_16fcfafe9bd4114bd0ca8f2581c273bffd5953f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.8.1/feab46062803513d6a8307c74b0084265855de1a/logging-interceptor-3.8.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="feab46062803513d6a8307c74b0084265855de1a">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/logging-interceptor-3.8.1_f27c8f53de67c2ffeeff637a8362d82fbf16febe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.2/db2277cb0641bd8bd2f491fab555d37345351d6/rxjava-2.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="0db2277cb0641bd8bd2f491fab555d37345351d6">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/rxjava-2.2.2_76a83e3440f6839dc5de1bdd9c89c950c6f8a0ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/libs/qumi_android_2.5.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="28.0.3"
+        sha1="131fecffad1254af53160bda55c823d4a634a286">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/qumi_android_2.5.1_17b0c33b5759bf2f9743a21a063fdf64b6f8124d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/3e915e54f4d557429c5941937270ce4a5f4121a1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_9694945eb149faf2bcff720d6ac0a9b954fc361d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/libs/qumi_android_2.5.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="131fecffad1254af53160bda55c823d4a634a286">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/qumi_android_2.5.1_17b0c33b5759bf2f9743a21a063fdf64b6f8124d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/45034d2e8cd04d894af8a619cc0c7db4caa58e49/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="6a2bcb61342d09fe9acf55c9daf63961c8866cc0">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_064051b2eca71113f353d7cb246939765c836c53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/0b579f45fd6206a76a49fcfcf1fb44018ee94f09/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="62c85d61c1ecd732dfe0c57e050d179ed85588bf">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_bbd38bccadd10650fd40c3ad0b77e091282d43b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="7103318ab8a16fe56a325b7554b088f4d49e4700">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_f99af00f7780e363f9cbf7a657e10aeb8b42890e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.0.0/ddd99896e9569eaababbe81b35d80e1b91c4ad85/eventbus-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/eventbus-3.0.0_4ca01f12ccd354dc06bc1e4cf1a3da9b4da41f21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/org.greenrobot/greendao-api/3.2.2/e9bbf7a184b0b4914a10d8179c993cc9aa9b1b33/greendao-api-3.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="e9bbf7a184b0b4914a10d8179c993cc9aa9b1b33">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/greendao-api-3.2.2_682885124ecea373bc037e8c5f0f19097f452d90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.2/323964c36556eb0e6209f65c1cef72b53b461ab8/reactive-streams-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="323964c36556eb0e6209f65c1cef72b53b461ab8">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/reactive-streams-1.0.2_30e0bfeb2ef8d1adc5bd277331b3661da0e4fac8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/libs/libammsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="28.0.3"
+        sha1="a5f20a9010df32cb73db28ec33964ed8b4c503cc">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/libammsdk_2f7c702da5abba9732b4a9b5f7b667efb4b9bf0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/libs/FlurryAgent.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="bce15eae77f71fb867c5696521d95ddfca2a021c">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/FlurryAgent_2415ac55d2f5e0627ffa418de2c134a88ea49437.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/72290bc47a5686b5a7756b4ae9ffc4cf95476b08/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="e616b95568c5f38322799069485eb73f68ffec0a">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_356070ea342cd709226b7cfd77cbd0ff6d395cfb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/com.squareup.okio/okio/2.1.0/5316c3393a9ff5c1b2af43df74463d63fb697a90/okio-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="5316c3393a9ff5c1b2af43df74463d63fb697a90">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/okio-2.1.0_f9123adf41254bfd886c86d34f6230901bed13cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/libs/libammsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="a5f20a9010df32cb73db28ec33964ed8b4c503cc">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/libammsdk_2f7c702da5abba9732b4a9b5f7b667efb4b9bf0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/f645ed69d595b24d4cf8b3fbb64cc505bede8829/gson-2.8.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="f645ed69d595b24d4cf8b3fbb64cc505bede8829">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/gson-2.8.5_e87ac81a1cdd40c43e9d0f979f7a6d093fb30eb1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/e6794751b8aa0d802559f31ccb42cf958c6ff8d9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="9e3177fae918dbe4e58eccf197cfb56bfaf59803">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_36cfc03126a58211c39d40365fe9610d841c3480.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/common-1.0.0_621f538880bc5ff852b628c9d8c2bedf4613356f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/libs/FlurryAgent.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="28.0.3"
+        sha1="bce15eae77f71fb867c5696521d95ddfca2a021c">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/FlurryAgent_2415ac55d2f5e0627ffa418de2c134a88ea49437.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/71a6fd664d433d14e036cf91a096d8999a24c62a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="cf7abe2a43ffb1d475e94d0877ef3abb95fff56e">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_0be7f522194c08b680f4534e5571860e32c26823.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="a9f82e7dd2825f94653a90115ecd3421c35bc046">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_ba47d3b7456b2363c863c38541f04a7164eaf379.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/org.greenrobot/greendao/3.2.2/f8c7ebdc29310be23d076e5512bafe6bad3ce2f0/greendao-3.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="f8c7ebdc29310be23d076e5512bafe6bad3ce2f0">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/greendao-3.2.2_c5d3472f265a1d2dcb430c61ba477b2ee358a4c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/libs/andengine.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="d8f126a70a00166b3d2b51a1baa24150bfcc4701">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/andengine_2c6b2af084a63286277c8206584300dda9db879e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/cc16516d49ce5c5382d8b555865e431ecdfe4dd0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="d1867104a29094bc1de2df7ab0bb786140fd2289">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_175bff9865c1ae58f032173032938be023fae460.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.android/build-cache/2af12a69d5e60dd5b42d8fd7721b52d25ed4135c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="89172db744f643c670ee7f9620b39ed460bc23fb">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/classes_d98c5edddaea0ce7ccc79207305393e666a524af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="bc373fb6bc7bca3035041b924f158fd2b946ee8d">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.8.1_b521957bc29ba9003d11ee926928392e112d18e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/2.4/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.3.0/9e09011e9767bb76b5e27c9b8223476b93b14631/converter-gson-2.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="9e09011e9767bb76b5e27c9b8223476b93b14631">
+        <dex dex="/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/pre-dexed/debug/converter-gson-2.3.0_e3ff8cf88c59e9ae13faa2506f7c7ff58e4f66ed.jar" />
+    </item>
+
+</items>

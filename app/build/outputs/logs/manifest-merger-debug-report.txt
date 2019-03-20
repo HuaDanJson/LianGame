@@ -1,0 +1,158 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:2:1-50:12
+	package
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:2:11-45
+		INJECTED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:3:11-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:5:22-65
+uses-permission#android.permission.INTERNET
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:8:5-77
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:8:22-75
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:9:5-74
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:9:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:11:22-65
+application
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:13:5-48:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jason/.android/build-cache/ec68a78aa7cb53296297ba4cab7c9dc405f85698/output/AndroidManifest.xml:9:5-20
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jason/.android/build-cache/660ed63a2afa2665123701af873e66582b1272b8/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:9:5-27:19
+MERGED from [cn.bmob.android:bmob-sdk:3.6.9] /Users/jason/.android/build-cache/cc16516d49ce5c5382d8b555865e431ecdfe4dd0/output/AndroidManifest.xml:11:5-14:19
+	android:label
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:17:9-41
+	android:supportsRtl
+		ADDED from [cn.bmob.android:bmob-sdk:3.6.9] /Users/jason/.android/build-cache/cc16516d49ce5c5382d8b555865e431ecdfe4dd0/output/AndroidManifest.xml:13:9-35
+	android:allowBackup
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:15:9-35
+	android:icon
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:16:9-38
+	android:theme
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:18:9-67
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:14:9-43
+activity#com.yottamobile.doraemon.activity.WelcomeActivity
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:20:9-29:20
+	android:screenOrientation
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:22:13-50
+	android:theme
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:23:13-47
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:21:13-53
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:24:13-28:29
+action#android.intent.action.MAIN
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:25:17-68
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:27:17-76
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:27:27-74
+activity#com.yottamobile.doraemon.Pikachu
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:31:9-35:20
+	android:screenOrientation
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:34:13-50
+	android:label
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:33:13-59
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:32:13-36
+activity#com.newqm.sdkoffer.QuMiActivity
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:37:9-39:65
+	android:configChanges
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:39:13-63
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:38:13-59
+activity#com.yottamobile.doraemon.activity.RegisterActivity
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:41:9-43:52
+	android:screenOrientation
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:43:13-50
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:42:13-54
+activity#com.yottamobile.doraemon.activity.LoginActivity
+ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:45:9-47:52
+	android:screenOrientation
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:47:13-50
+	android:name
+		ADDED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml:46:13-51
+uses-sdk
+INJECTED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:27.0.0] /Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.0] /Users/jason/.android/build-cache/e6794751b8aa0d802559f31ccb42cf958c6ff8d9/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.0] /Users/jason/.android/build-cache/71a6fd664d433d14e036cf91a096d8999a24c62a/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.0] /Users/jason/.android/build-cache/72290bc47a5686b5a7756b4ae9ffc4cf95476b08/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.0] /Users/jason/.android/build-cache/f3b366b0672bae1c238b0dddccaf233e27312c35/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jason/.android/build-cache/ec68a78aa7cb53296297ba4cab7c9dc405f85698/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:27.0.0] /Users/jason/.android/build-cache/0b579f45fd6206a76a49fcfcf1fb44018ee94f09/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.0] /Users/jason/.android/build-cache/f7d4756e96a2ac9ae6242f9f6973ced9d521c4eb/output/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/jason/.android/build-cache/45034d2e8cd04d894af8a619cc0c7db4caa58e49/output/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-compat:27.0.0] /Users/jason/.android/build-cache/2af12a69d5e60dd5b42d8fd7721b52d25ed4135c/output/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jason/.android/build-cache/660ed63a2afa2665123701af873e66582b1272b8/output/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:multidex:1.0.1] /Users/jason/.android/build-cache/3e915e54f4d557429c5941937270ce4a5f4121a1/output/AndroidManifest.xml:18:5-42
+MERGED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:7:5-44
+MERGED from [cn.bmob.android:bmob-sdk:3.6.9] /Users/jason/.android/build-cache/cc16516d49ce5c5382d8b555865e431ecdfe4dd0/output/AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/jason/.android/build-cache/17e2d8716ebe4e3d33cb125360374c6f4b07dfb6/output/AndroidManifest.xml:18:5-43
+	android:targetSdkVersion
+		INJECTED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/AndroidManifest.xml
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/jason/.android/build-cache/660ed63a2afa2665123701af873e66582b1272b8/output/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/jason/.android/build-cache/660ed63a2afa2665123701af873e66582b1272b8/output/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/jason/.android/build-cache/660ed63a2afa2665123701af873e66582b1272b8/output/AndroidManifest.xml:26:13-58
+activity#com.blankj.utilcode.util.PermissionUtils$PermissionActivity
+ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:10:9-15:75
+	android:multiprocess
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:13:13-40
+	android:windowSoftInputMode
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:15:13-72
+	android:configChanges
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:12:13-74
+	android:theme
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:14:13-55
+	android:name
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:11:13-87
+provider#com.blankj.utilcode.util.Utils$FileProvider4UtilCode
+ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:17:9-26:20
+	android:authorities
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:19:13-69
+	android:grantUriPermissions
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:21:13-47
+	android:multiprocess
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:22:13-40
+	android:exported
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:20:13-37
+	android:name
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:18:13-80
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:23:13-25:68
+	android:resource
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:25:17-65
+	android:name
+		ADDED from [com.blankj:utilcode:1.23.4] /Users/jason/.android/build-cache/e5d4209ae6e7ab05e3b3b32db1ac26958dd940af/output/AndroidManifest.xml:24:17-67

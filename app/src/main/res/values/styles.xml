@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light"/>
+
+    <!-- 启动页主题 -->
+    <style name="SplashTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/icon_welcom</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="DialogScaleAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_out</item>
+    </style>
+
+
+</resources>

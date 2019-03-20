@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_game_select"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/game_mission"
+                android:layout_width="135dp"
+                android:layout_height="172dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="selectGame"
+                android:tag="mission" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/game_mission" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/game_top"
+                android:layout_width="135dp"
+                android:layout_height="172dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="selectGame"
+                android:tag="top" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/game_top" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/game_more"
+                android:layout_width="135dp"
+                android:layout_height="172dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="selectGame"
+                android:tag="more" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/more_game" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/dialog_scale_out.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/dialog_scale_out.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/like_violet_bg_animation.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/like_violet_bg_animation.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/like_unopen_banana_animation.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/like_unopen_banana_animation.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/exit_to_right_fast.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/exit_to_right_fast.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/twop_enter_animation.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/twop_enter_animation.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/twop_slide_in_animation.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/twop_slide_in_animation.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/video_player_exit_animation.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/video_player_exit_animation.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/exit_to_left.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/exit_to_left.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/exit_to_right.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/exit_to_right.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/enter_from_left.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/enter_from_left.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/slide_in_level_table.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/slide_in_level_table.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/like_white_bg_animation.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/like_white_bg_animation.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/slide_out_level_table.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/slide_out_level_table.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/exit_to_bottom.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/exit_to_bottom.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/text_chat_video_call_rotate_anim.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/text_chat_video_call_rotate_anim.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/dialog_slide_in_from_bottom_to_middle.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/dialog_slide_in_from_bottom_to_middle.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/like_open_banana_animation.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/like_open_banana_animation.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/exit_from_middle_scal.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/exit_from_middle_scal.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/exit_stop_original_place.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/exit_stop_original_place.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/data_picker_dialog_exit.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/data_picker_dialog_exit.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/dialog_scale_in.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/dialog_scale_in.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/tooltip_enter.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/dialog_slide_out_from_middle_to_top.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/dialog_slide_out_from_middle_to_top.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/slide_out_from_middle.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/slide_out_from_middle.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/tooltip_exit.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/video_player_enter_animation.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/video_player_enter_animation.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/data_picker_dialog_enter.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/data_picker_dialog_enter.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/base_video_call_rotate_anim.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/base_video_call_rotate_anim.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/enter_from_middle_alpha.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/enter_from_middle_alpha.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/like_yellow_bg_animation.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/like_yellow_bg_animation.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/dialog_alpha_in.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/dialog_alpha_in.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/like_black_bg_animation.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/like_black_bg_animation.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/enter_from_bottom.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/enter_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/enter_from_right.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/enter_from_right.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/slide_in_from_middle.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/slide_in_from_middle.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/slide_in_from_middle_to_middle.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/slide_in_from_middle_to_middle.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/dialog_slide_out_from_middle_to_bottom.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/dialog_slide_out_from_middle_to_bottom.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/jason/.android/build-cache/ce27910ffb8d9ee6f15fa9fd3b7de4d5b20248f9/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/dialog_alpha_out.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/dialog_alpha_out.xml"
+    },
+    {
+        "merged": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/build/intermediates/res/merged/debug/anim/dialog_slide_in_from_top_to_middle.xml",
+        "source": "/Users/jason/Downloads/StudeoProject/TemProject/ShotVideo/23_Doraemon/app/src/main/res/anim/dialog_slide_in_from_top_to_middle.xml"
+    }
+]
