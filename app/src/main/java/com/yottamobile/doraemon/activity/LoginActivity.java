@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.yottamobile.doraemon.Pikachu;
+import com.yottamobile.doraemon.PikachuActivity;
 import com.yottamobile.doraemon.R;
 import com.yottamobile.doraemon.base.BaseActivity;
 import com.yottamobile.doraemon.bean.CurrentUser;
@@ -51,7 +51,7 @@ public class LoginActivity extends BaseActivity {
                 public void done(CurrentUser bmobUser, BmobException e) {
                     if (e == null) {
                         CurrentUser user = BmobUser.getCurrentUser(CurrentUser.class);
-                        toActivity(Pikachu.class);
+                        toActivity(PikachuActivity.class);
                         ToastHelper.showShortMessage("登录成功");
                         CurrentUserHelper.getInstance().updateCurrentUser(user);
                         finish();

@@ -1,9 +1,5 @@
 package com.yottamobile.doraemon.ui;
 
-import java.util.Vector;
-
-import org.andengine.engine.handler.timer.ITimerCallback;
-import org.andengine.engine.handler.timer.TimerHandler;
 import org.andengine.entity.IEntity;
 import org.andengine.entity.modifier.DelayModifier;
 import org.andengine.entity.modifier.IEntityModifier;
@@ -14,9 +10,8 @@ import org.andengine.entity.sprite.vbo.ISpriteVertexBufferObject;
 import org.andengine.opengl.texture.region.ITextureRegion;
 import org.andengine.opengl.texture.region.TextureRegion;
 import org.andengine.opengl.vbo.VertexBufferObjectManager;
-import org.andengine.util.modifier.IModifier;
 
-import com.yottamobile.doraemon.Pikachu;
+import java.util.Vector;
 
 public class Pika extends Sprite {
 
@@ -51,6 +46,7 @@ public class Pika extends Sprite {
 		if (sHidden != null && sHidden.isVisible()) {
 	
 			ScaleModifier toMin = new ScaleModifier(0.1f, 1, 0, 1, 1) {
+				@Override
 				protected void onModifierFinished(IEntity pItem) {
 					sHidden.setVisible(false);
 
@@ -71,13 +67,15 @@ public class Pika extends Sprite {
 	public void clearEntityModifiers() {
 		// TODO Auto-generated method stub
 		super.clearEntityModifiers();
-		if (isHidden && !sHidden.isVisible())
+		if (isHidden && !sHidden.isVisible()) {
 			flipDown();
+		}
 	}
 
 	public void flipDown() {
 		DelayModifier delay = new DelayModifier(TIME_FLIP_UP);
 		ScaleModifier toMin1 = new ScaleModifier(0.1f, 1, 0, 1, 1) {
+			@Override
 			protected void onModifierFinished(IEntity pItem) {
 				sHidden.setVisible(true);
 				super.onModifierFinished(pItem);
@@ -119,8 +117,9 @@ public class Pika extends Sprite {
 	public void startSequen() {
 		if (vModifier.size() >= 2) {
 			IEntityModifier[] listM = new IEntityModifier[vModifier.size()];
-			for (int i = 0; i < listM.length; i++)
+			for (int i = 0; i < listM.length; i++) {
 				listM[i] = vModifier.get(i);
+			}
 			SequenceEntityModifier sequen = new SequenceEntityModifier(listM);
 			registerEntityModifier(sequen);
 		} else if (vModifier.size() == 1) {

@@ -1,22 +1,12 @@
 package com.yottamobile.doraemon.adapter;
 
-import org.andengine.util.color.Color;
-
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.util.DisplayMetrics;
-import android.util.Log;
-import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Gallery;
-import android.widget.GridView;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.ImageView.ScaleType;
 
-import com.yottamobile.doraemon.Pikachu;
+import com.yottamobile.doraemon.PikachuActivity;
 import com.yottamobile.doraemon.R;
 
 public class SelectGameAdapter extends BaseAdapter {
@@ -38,7 +28,7 @@ public class SelectGameAdapter extends BaseAdapter {
 		
 		View vi = convertView;
 //		if (convertView == null)
-			vi = Pikachu.getPikachu().getLayoutInflater().inflate(R.layout.game_pikachu, parent, false);
+			vi = PikachuActivity.getPikachu().getLayoutInflater().inflate(R.layout.game_pikachu, parent, false);
 
 		
 		ImageView btn = (ImageView) vi.findViewById(R.id.imageView1);
@@ -49,7 +39,7 @@ public class SelectGameAdapter extends BaseAdapter {
 		// imageView.setImageBitmap(mThumbIds[position]);
 		// imageView.setScaleType(ScaleType.FIT_XY);
 		// DisplayMetrics dm =
-		// Pikachu.getPikachu().getResources().getDisplayMetrics();
+		// PikachuActivity.getPikachu().getResources().getDisplayMetrics();
 		// float dpInPxW =
 		// TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 70, dm);
 		// float dpInPxH =

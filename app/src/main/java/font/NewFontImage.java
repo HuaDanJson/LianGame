@@ -1,7 +1,5 @@
 package font;
 
-import com.yottamobile.doraemon.Pikachu;
-
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;

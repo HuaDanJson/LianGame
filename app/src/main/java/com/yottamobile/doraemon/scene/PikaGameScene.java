@@ -3,7 +3,7 @@ package com.yottamobile.doraemon.scene;
 import android.graphics.Bitmap;
 import android.view.View;
 
-import com.yottamobile.doraemon.Pikachu;
+import com.yottamobile.doraemon.PikachuActivity;
 import com.yottamobile.doraemon.R;
 import com.yottamobile.doraemon.SceneType;
 import com.yottamobile.doraemon.ui.MButton;
@@ -28,41 +28,42 @@ public class PikaGameScene extends CustomScene implements IMyScene, OnClickListe
 	private Sprite gameDetail;
 	private Text mDetail;
 
+	@Override
 	public Scene onCreateScene(BaseGameActivity game, Camera mCamera) {
-		Pikachu.getPikachu().detectView(Pikachu.SHOW_GAME_SELECT);
+		PikachuActivity.getPikachu().detectView(PikachuActivity.SHOW_GAME_SELECT);
 
-		Sprite bg = new Sprite(0, 0, Pikachu.getPikachu().background, game.getVertexBufferObjectManager());
+		Sprite bg = new Sprite(0, 0, PikachuActivity.getPikachu().background, game.getVertexBufferObjectManager());
 		attachChild(bg);
 
-		MButton btnBack = new MButton(9, 400, Pikachu.getPikachu().textureBack, game.getVertexBufferObjectManager());
+		MButton btnBack = new MButton(9, 400, PikachuActivity.getPikachu().textureBack, game.getVertexBufferObjectManager());
 
 		btnBack.setOnClickListener(this);
 		registerTouchArea(btnBack);
 
-		gameDetail = new Sprite(17, 281, Pikachu.getPikachu().regionGame_detail, game.getVertexBufferObjectManager());
-		mDetail = new Text(54, 22, Pikachu.getPikachu().fontTektonProWhite35, game.getString(R.string.classic), 1000, game.getVertexBufferObjectManager());
-		//mDetail = new Text(54, 22, Pikachu.getPikachu().fontTektonProWhite35, "Classic mode\nAccomplish all pairs of icons within \na limited time.", 1000, game.getVertexBufferObjectManager());
+		gameDetail = new Sprite(17, 281, PikachuActivity.getPikachu().regionGame_detail, game.getVertexBufferObjectManager());
+		mDetail = new Text(54, 22, PikachuActivity.getPikachu().fontTektonProWhite35, game.getString(R.string.classic), 1000, game.getVertexBufferObjectManager());
+		//mDetail = new Text(54, 22, PikachuActivity.getPikachu().fontTektonProWhite35, "Classic mode\nAccomplish all pairs of icons within \na limited time.", 1000, game.getVertexBufferObjectManager());
 
 		gameDetail.attachChild(mDetail);
 		attachChild(gameDetail);
 		attachChild(btnBack);
 
-		final MButton btnGo = new MButton(600, 300, Pikachu.getPikachu().textureGo, game.getVertexBufferObjectManager()) {
+		final MButton btnGo = new MButton(600, 300, PikachuActivity.getPikachu().textureGo, game.getVertexBufferObjectManager()) {
 			@Override
 			public boolean onAreaTouched(TouchEvent pSceneTouchEvent, float pTouchAreaLocalX, float pTouchAreaLocalY) {
 				if (pSceneTouchEvent.getAction() == TouchEvent.ACTION_DOWN) {
-					View currentGame = Pikachu.getPikachu().currentGame;
+					View currentGame = PikachuActivity.getPikachu().currentGame;
 					
 					if (currentGame.getTag().toString().equals("mission")) {
-						Pikachu.getPikachu().game_mode = Pikachu.GAME_CLASSIC;
-						Pikachu.getPikachu().detectView(Pikachu.VISIBLE_GAME_SELECT);						
-						Pikachu.getPikachu().changeScene(SceneType.LEVEL);
+						PikachuActivity.getPikachu().game_mode = PikachuActivity.GAME_CLASSIC;
+						PikachuActivity.getPikachu().detectView(PikachuActivity.VISIBLE_GAME_SELECT);
+						PikachuActivity.getPikachu().changeScene(SceneType.LEVEL);
 					} else if (currentGame.getTag().toString().equals("top")) {
-						Pikachu.getPikachu().game_mode = Pikachu.GAME_KING;
-						Pikachu.getPikachu().detectView(Pikachu.VISIBLE_GAME_SELECT);						
-						Pikachu.getPikachu().changeScene(SceneType.GAME);
+						PikachuActivity.getPikachu().game_mode = PikachuActivity.GAME_KING;
+						PikachuActivity.getPikachu().detectView(PikachuActivity.VISIBLE_GAME_SELECT);
+						PikachuActivity.getPikachu().changeScene(SceneType.GAME);
 					} else {
-						Pikachu.getPikachu().detectView(Pikachu.SHOW_MORE);
+						PikachuActivity.getPikachu().detectView(PikachuActivity.SHOW_MORE);
 					}
 				}
 				return super.onAreaTouched(pSceneTouchEvent, pTouchAreaLocalX, pTouchAreaLocalY);
@@ -92,8 +93,8 @@ public class PikaGameScene extends CustomScene implements IMyScene, OnClickListe
 
 	@Override
 	public void onClick(ButtonSprite pButtonSprite, float pTouchAreaLocalX, float pTouchAreaLocalY) {
-		Pikachu.getPikachu().detectView(Pikachu.VISIBLE_GAME_SELECT);
-		Pikachu.getPikachu().changeScene(SceneType.HOME);
+		PikachuActivity.getPikachu().detectView(PikachuActivity.VISIBLE_GAME_SELECT);
+		PikachuActivity.getPikachu().changeScene(SceneType.HOME);
 
 	}
 

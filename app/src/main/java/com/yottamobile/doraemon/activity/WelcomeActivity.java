@@ -2,7 +2,7 @@ package com.yottamobile.doraemon.activity;
 
 import android.os.Bundle;
 
-import com.yottamobile.doraemon.Pikachu;
+import com.yottamobile.doraemon.PikachuActivity;
 import com.yottamobile.doraemon.R;
 import com.yottamobile.doraemon.base.BaseActivity;
 
@@ -18,7 +18,7 @@ public class WelcomeActivity extends BaseActivity {
         //第一：默认初始化
         Bmob.initialize(this, "f234cdf0e315906726f19e377fced71e");
         if (BmobUser.isLogin()) {
-            toActivity(Pikachu.class);
+            toActivity(PikachuActivity.class);
         } else {
             toActivity(LoginActivity.class);
         }

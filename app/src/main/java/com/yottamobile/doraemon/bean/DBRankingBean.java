@@ -16,7 +16,7 @@ public class DBRankingBean {
 
     private int score;//得分
 
-    private int type;//等级  1代表简单  2：代表中级  3：代表高级
+    private int type;//等级
 
     @Generated(hash = 1940062535)
     public DBRankingBean(long currentTimeAsId, int score, int type) {

@@ -1,10 +1,7 @@
 package com.yottamobile.doraemon;
 
 import android.content.Intent;
-import android.content.res.AssetManager;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.opengl.GLES20;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -17,6 +14,7 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.blankj.utilcode.util.LogUtils;
 import com.flurry.android.FlurryAgent;
 import com.newqm.sdkoffer.AdView;
 import com.newqm.sdkoffer.QuMiConnect;
@@ -63,16 +61,12 @@ import org.andengine.opengl.view.RenderSurfaceView;
 import org.andengine.ui.activity.SimpleLayoutGameActivity;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.ShortBuffer;
 import java.util.Random;
 import java.util.Vector;
 
 import cn.bmob.v3.Bmob;
 
-public class Pikachu extends SimpleLayoutGameActivity implements
+public class PikachuActivity extends SimpleLayoutGameActivity implements
         IOnSceneTouchListener, ICapture {
 
     public static int CAMERA_WIDTH = 800;
@@ -87,7 +81,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
     public static boolean soundBG = true;
     public static boolean soundGame = true;
 
-    static Pikachu mPikachu;
+    static PikachuActivity mPikachuActivity;
     public SceneType currentScene = SceneType.SPLASH;
 
     private static Music musicBG;
@@ -132,16 +126,14 @@ public class Pikachu extends SimpleLayoutGameActivity implements
     public static final int SOUND_LOSE = 2;
     public static final int SOUND_STAR = 3;
     private AdView adView;
-
-    // private Scene splashScene;
     private TextureRegion splashTextureRegion;
     private Sprite splash;
     private boolean isInitialzed = false;
 
     private LinearLayout gameMission, gameTop, gameMore;
 
-    public static Pikachu getPikachu() {
-        return mPikachu;
+    public static PikachuActivity getPikachu() {
+        return mPikachuActivity;
     }
 
     public RenderSurfaceView getRenderSurfaceView() {
@@ -173,7 +165,6 @@ public class Pikachu extends SimpleLayoutGameActivity implements
                 case SOUND_STAR:
                     soundStar.play();
                     break;
-
                 default:
                     break;
             }
@@ -182,19 +173,14 @@ public class Pikachu extends SimpleLayoutGameActivity implements
 
     @Override
     public EngineOptions onCreateEngineOptions() {
+        LogUtils.d("PikachuActivity  onCreateEngineOptions()");
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
         WIN_DOW_W = metrics.widthPixels;
         WIN_DOW_H = metrics.heightPixels;
         scaleX = (float) metrics.widthPixels / (float) CAMERA_WIDTH;
         scaleY = (float) metrics.heightPixels / (float) CAMERA_HEIGHT;
-
-        // System.out.println(scaleX + " - " + scaleY);
-
         this.mCamera = new Camera(0, 0, CAMERA_WIDTH, CAMERA_HEIGHT);
-        // EngineOptions engine = new EngineOptions(true,
-        // ScreenOrientation.LANDSCAPE_FIXED, new
-        // RatioResolutionPolicy(CAMERA_WIDTH, CAMERA_HEIGHT), this.mCamera);
         EngineOptions engine = new EngineOptions(true,
                 ScreenOrientation.LANDSCAPE_FIXED, new FillResolutionPolicy(),
                 this.mCamera);
@@ -216,7 +202,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
     }
 
     public static void setSoundBG(boolean soundBG) {
-        Pikachu.soundBG = soundBG;
+        PikachuActivity.soundBG = soundBG;
         if (soundBG) {
             musicBG.play();
         } else {
@@ -226,7 +212,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
     }
 
     public static void setSoundGame(boolean soundGame) {
-        Pikachu.soundGame = soundGame;
+        PikachuActivity.soundGame = soundGame;
         PikaSaveGamer.saveSoundGame(PikaSaveGamer.KEY_SOUND_GAME, soundGame);
     }
 
@@ -248,34 +234,22 @@ public class Pikachu extends SimpleLayoutGameActivity implements
 
     @Override
     protected void onCreateResources() {
-
+        LogUtils.d("PikachuActivity  onCreateResources()");
         BitmapTextureAtlas splashTextureAtlas = new BitmapTextureAtlas(
                 this.getTextureManager(), 163, 215);
         splashTextureRegion = BitmapTextureAtlasTextureRegionFactory
                 .createFromAsset(splashTextureAtlas, this,
                         "background/splash.png", 0, 0);
         splashTextureAtlas.load();
-
-        /*
-         * try { musicBG = MusicFactory.createMusicFromAsset(getMusicManager(),
-         * this, "sound/bg.mp3"); } catch (IOException e) { // TODO
-         * Auto-generated catch block e.printStackTrace(); }
-         * musicBG.setLooping(true); musicBG.setVolume(0.1f);
-         */
-
         currentScene = SceneType.SPLASH;
-
         mEngine.registerUpdateHandler(new TimerHandler(1f,
                 new ITimerCallback() {
                     @Override
                     public void onTimePassed(final TimerHandler pTimerHandler) {
                         mEngine.unregisterUpdateHandler(pTimerHandler);
                         loadResources();
-                        // loadScenes();
                         splash.detachSelf();
                         currentScene = SceneType.HOME;
-
-                        // TODO moved from onCreateScene
                         setSoundBG(PikaSaveGamer
                                 .getSound(PikaSaveGamer.KEY_SOUND_BG));
                         setSoundGame(PikaSaveGamer
@@ -283,18 +257,15 @@ public class Pikachu extends SimpleLayoutGameActivity implements
                         if (isSoundBG()) {
                             musicBG.play();
                         }
-
                         isInitialzed = true;
-
                         mEngine.setScene(switchScene(currentScene));
                     }
                 }));
     }
 
     protected void loadResources() {
-
+        LogUtils.d("PikachuActivity  loadResources()");
         try {
-
             BitmapTextureAtlas wave = new BitmapTextureAtlas(
                     getTextureManager(), 1024, 1024);
             this.wave = BitmapTextureAtlasTextureRegionFactory.createFromAsset(
@@ -715,12 +686,11 @@ public class Pikachu extends SimpleLayoutGameActivity implements
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
         currentScene = SceneType.HOME;
-
     }
 
     public void detectView(final int view) {
+        LogUtils.d("PikachuActivity  detectView() : " + view);
         new Thread() {
             @Override
             public void run() {
@@ -728,28 +698,21 @@ public class Pikachu extends SimpleLayoutGameActivity implements
                 msg.arg1 = view;
                 mHandler.sendMessage(msg);
             }
-
-            ;
         }.start();
     }
 
     @Override
     public Scene onCreateScene() {
-        mPikachu = this;
+        LogUtils.d("PikachuActivity  onCreateScene()");
+        mPikachuActivity = this;
         vData = PikaSaveGamer.getDataLevel();
         HIGH_SCORE = PikaSaveGamer.getHighScore();
         showTutorial = PikaSaveGamer.getSound(PikaSaveGamer.KEY_TUTORIAL);
-
-        /*
-         * setSoundBG(PikaSaveGamer.getSound(PikaSaveGamer.KEY_SOUND_BG));
-         * setSoundGame(PikaSaveGamer.getSound(PikaSaveGamer.KEY_SOUND_GAME));
-         * if (isSoundBG()) musicBG.play();
-         */
-
         return switchScene(currentScene);
     }
 
     public void editLevelData(int level, int state) {
+        LogUtils.d("PikachuActivity  editLevelData() level : " + level + "  state : " + state + "  vData.size() : " + vData.size());
         if (level < vData.size()) {
             PikaLevelData levelData = vData.get(level);
             if (levelData.state < state) {
@@ -761,7 +724,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
 
     @Override
     public synchronized void onPauseGame() {
-
+        LogUtils.d("PikachuActivity  onPauseGame()");
         if (mEngine.getScene() instanceof PikaPlayScene) {
             ((PikaPlayScene) mEngine.getScene()).showPopUpPause();
         }
@@ -774,6 +737,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
 
     @Override
     public synchronized void onResumeGame() {
+        LogUtils.d("PikachuActivity  onResumeGame()");
         if ((isInitialzed) && (isSoundBG())) {
             musicBG.play();
         }
@@ -783,17 +747,18 @@ public class Pikachu extends SimpleLayoutGameActivity implements
     public View currentGame;
 
     public void selectGame(View v) {
+        LogUtils.d("PikachuActivity  selectGame()");
         if (currentGame == v) {
             if (currentGame.getTag().toString().equals("mission")) {
-                Pikachu.getPikachu().game_mode = Pikachu.GAME_CLASSIC;
-                Pikachu.getPikachu().detectView(Pikachu.VISIBLE_GAME_SELECT);
-                Pikachu.getPikachu().changeScene(SceneType.LEVEL);
+                PikachuActivity.getPikachu().game_mode = PikachuActivity.GAME_CLASSIC;
+                PikachuActivity.getPikachu().detectView(PikachuActivity.VISIBLE_GAME_SELECT);
+                PikachuActivity.getPikachu().changeScene(SceneType.LEVEL);
             } else if (currentGame.getTag().toString().equals("top")) {
-                Pikachu.getPikachu().game_mode = Pikachu.GAME_KING;
-                Pikachu.getPikachu().detectView(Pikachu.VISIBLE_GAME_SELECT);
-                Pikachu.getPikachu().changeScene(SceneType.GAME);
+                PikachuActivity.getPikachu().game_mode = PikachuActivity.GAME_KING;
+                PikachuActivity.getPikachu().detectView(PikachuActivity.VISIBLE_GAME_SELECT);
+                PikachuActivity.getPikachu().changeScene(SceneType.GAME);
             } else {
-                Pikachu.getPikachu().detectView(Pikachu.SHOW_MORE);
+                PikachuActivity.getPikachu().detectView(PikachuActivity.SHOW_MORE);
             }
         } else {
             gameMission.setBackgroundColor(android.graphics.Color.TRANSPARENT);
@@ -803,7 +768,6 @@ public class Pikachu extends SimpleLayoutGameActivity implements
             currentGame = v;
 
             if (currentGame.getTag().toString().equals("mission")) {
-
                 ((PikaGameScene) mEngine.getScene())
                         .setGameDetail(getString(R.string.classic));
             } else if (currentGame.getTag().toString().equals("top")) {
@@ -817,31 +781,32 @@ public class Pikachu extends SimpleLayoutGameActivity implements
     }
 
     public Scene switchScene(SceneType scene) {
+        LogUtils.d("PikachuActivity  switchScene()");
         currentScene = scene;
         Scene mScene = null;
 
         if (scene == SceneType.GAME) {
-            Pikachu.getPikachu().detectView(Pikachu.VISIBLE_ADS);
+            PikachuActivity.getPikachu().detectView(PikachuActivity.VISIBLE_ADS);
             PikaPlayScene playScene = new PikaPlayScene();
             mScene = playScene.onCreateScene(this, mCamera);
         } else if (scene == SceneType.LEVEL) {
-            Pikachu.getPikachu().detectView(Pikachu.SHOW_ADS);
+            PikachuActivity.getPikachu().detectView(PikachuActivity.SHOW_ADS);
             PikaLevelScene levelScene = new PikaLevelScene();
             mScene = levelScene.onCreateScene(this, mCamera);
         } else if (scene == SceneType.HOME) {
             if (adView !=
                     null) {
-                Pikachu.getPikachu().detectView(Pikachu.SHOW_ADS);
+                PikachuActivity.getPikachu().detectView(PikachuActivity.SHOW_ADS);
             }
-            Pikachu.getPikachu().detectView(Pikachu.VISIBLE_ADS);
+            PikachuActivity.getPikachu().detectView(PikachuActivity.VISIBLE_ADS);
             PikaHomeScene homeScene = new PikaHomeScene();
             mScene = homeScene.onCreateScene(this, mCamera);
         } else if (scene == SceneType.SELECT_GAME) {
-            Pikachu.getPikachu().detectView(Pikachu.SHOW_ADS);
+            PikachuActivity.getPikachu().detectView(PikachuActivity.SHOW_ADS);
             PikaGameScene selectGame = new PikaGameScene();
             mScene = selectGame.onCreateScene(this, mCamera);
         } else if (scene == SceneType.SPLASH) {
-            Pikachu.getPikachu().detectView(Pikachu.VISIBLE_ADS);
+            PikachuActivity.getPikachu().detectView(PikachuActivity.VISIBLE_ADS);
             mScene = new Scene();
             splash = new Sprite(0, 0, splashTextureRegion,
                     mEngine.getVertexBufferObjectManager()) {
@@ -853,16 +818,8 @@ public class Pikachu extends SimpleLayoutGameActivity implements
             };
 
             mScene.setScale(1.5f);
-            mScene.setPosition((CAMERA_WIDTH - splash.getWidth()) * 0.4f,
-                    (CAMERA_HEIGHT - splash.getHeight()) * 0.4f);
+            mScene.setPosition((CAMERA_WIDTH - splash.getWidth()) * 0.4f, (CAMERA_HEIGHT - splash.getHeight()) * 0.4f);
             mScene.attachChild(splash);
-
-            /*
-             * Text mLoading = new TickerText(100, -70,
-             * Pikachu.getPikachu().mStrokeFont, getString(R.string.loading),
-             * new TickerTextOptions(30), getVertexBufferObjectManager());
-             * mLoading.setScale(0.5f); mScene.attachChild(mLoading);
-             */
         }
 
         return mScene;
@@ -870,56 +827,33 @@ public class Pikachu extends SimpleLayoutGameActivity implements
     }
 
     public void changeScene(SceneType scene) {
+        LogUtils.d("PikachuActivity  changeScene()");
         mEngine.setScene(switchScene(scene));
-
     }
 
     @Override
     protected void onSetContentView() {
-        // TODO Auto-generated method stub
+        LogUtils.d("PikachuActivity  onSetContentView()");
         super.onSetContentView();
-        // final RelativeLayout layout = (RelativeLayout)
-        // findViewById(R.id.layout_render);
-        // View vi = getLayoutInflater().inflate(R.layout.game_select_pikachu,
-        // null, false);
-        // Gallery g = (Gallery) vi.findViewById(R.id.gallery);
-        // g.setAdapter(new SelectGameAdapter(getApplicationContext()));
-        // layout.addView(vi);
-        // vi.setVisibility(View.GONE);
         final RelativeLayout layout = (RelativeLayout) findViewById(R.id.layout_render);
-        // View vi =
-        // Pikachu.getPikachu().getLayoutInflater().inflate(R.layout.game_select_pikachu,
-        // null, false);
-        // layout.addView(vi);
-
-        // View level =
-        // Pikachu.getPikachu().getLayoutInflater().inflate(R.layout.level_pikachu,
-        // null, false);
-        // layout.addView(level);
     }
 
     public final Handler mHandler = new Handler() {
-
         @Override
         public void handleMessage(android.os.Message msg) {
-            final RelativeLayout layout = (RelativeLayout) Pikachu.getPikachu()
-                    .findViewById(R.id.layout_render);
+            final RelativeLayout layout = (RelativeLayout) PikachuActivity.getPikachu().findViewById(R.id.layout_render);
             adView = (AdView) layout.findViewById(R.id.ads);
+            LogUtils.d("PikachuActivity  mHandler() : " + msg.arg1);
             switch (msg.arg1) {
                 case SHOW_MORE:
-                    //QuMiConnect.getQumiConnectInstance().showOffers(null);
-//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://support.evanhe.com/download/")));
-                    startActivity(new Intent(Pikachu.this, RankingActivity.class));
+                    startActivity(new Intent(PikachuActivity.this, RankingActivity.class));
                     break;
-
                 case SHOW_INT:
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(5);
                     if (randomInt < 3) {
-                        QuMiConnect.getQumiConnectInstance(mPikachu)
-                                .showPopUpAd(mPikachu);
+                        QuMiConnect.getQumiConnectInstance(mPikachuActivity).showPopUpAd(mPikachuActivity);
                     }
-
                     adView.setVisibility(View.VISIBLE);
                     break;
                 case SHOW_ADS:
@@ -931,7 +865,7 @@ public class Pikachu extends SimpleLayoutGameActivity implements
                 case SHOW_GAME_SELECT:
                     View vi = (View) layout.findViewById(R.id.layout_game_select);
                     if (vi == null) {
-                        vi = Pikachu.getPikachu().getLayoutInflater()
+                        vi = PikachuActivity.getPikachu().getLayoutInflater()
                                 .inflate(R.layout.game_select_pikachu, null, false);
                         layout.addView(vi);
                     }
@@ -952,110 +886,31 @@ public class Pikachu extends SimpleLayoutGameActivity implements
 
                     if (mEngine.getScene() instanceof PikaPlayScene) {
                         if (currentGame.getTag().toString().equals("mission")) {
-
-                            ((PikaGameScene) mEngine.getScene())
-                                    .setGameDetail(getString(R.string.classic));
+                            if (mEngine != null && (PikaGameScene) mEngine.getScene() != null) {
+                                ((PikaGameScene) mEngine.getScene()).setGameDetail(getString(R.string.classic));
+                            }
                         } else if (currentGame.getTag().toString().equals("top")) {
-                            ((PikaGameScene) mEngine.getScene())
-                                    .setGameDetail(getString(R.string.crazy));
+                            if (mEngine != null && (PikaGameScene) mEngine.getScene() != null) {
+                                ((PikaGameScene) mEngine.getScene()).setGameDetail(getString(R.string.crazy));
+                            }
                         } else {
-                            ((PikaGameScene) mEngine.getScene())
-                                    .setGameDetail(getString(R.string.more));
-
+                            if (mEngine != null && (PikaGameScene) mEngine.getScene() != null) {
+                                ((PikaGameScene) mEngine.getScene()).setGameDetail(getString(R.string.more));
+                            }
                         }
                     }
-                    // g.setAdapter(new SelectGameAdapter(getApplicationContext()));
-                    // g.setSelection(1);
-                    // g.setOnItemClickListener(new OnItemClickListener() {
-                    //
-                    // public void onItemClick(AdapterView<?> parent, View v, int
-                    // position, long id) {
-                    //
-                    // game_mode = position;
-                    // if (game_mode == GAME_CLASSIC) {
-                    // Pikachu.getPikachu().detectView(Pikachu.VISIBLE_GAME_SELECT);
-                    // mEngine.setScene(switchScene(SceneType.LEVEL));
-                    // } else if (game_mode == GAME_KING) {
-                    // Pikachu.getPikachu().detectView(Pikachu.VISIBLE_GAME_SELECT);
-                    // mEngine.setScene(switchScene(SceneType.GAME));
-                    // } else {
-                    // Intent myIntent = new Intent(Pikachu.this,
-                    // FriendsActivity.class);
-                    // startActivity(myIntent);
-                    // }
-                    // }
-                    // });
-
-                    // g.setOnItemSelectedListener(new OnItemSelectedListener() {
-                    //
-                    // private View lastview;
-                    //
-                    // public void onItemSelected(AdapterView<?> arg0, View arg1,
-                    // int arg2, long arg3) {
-                    // if (mEngine.getScene() instanceof PikaGameScene) {
-                    //
-                    // if(lastview!=null)
-                    // lastview.setBackgroundColor(android.graphics.Color.TRANSPARENT);
-                    // lastview = arg1;
-                    // arg1.setBackgroundResource(R.drawable.hover);
-                    //
-                    // game_mode = arg2;
-                    // if (game_mode == GAME_CLASSIC) {
-                    // ((PikaGameScene) mEngine.getScene())
-                    // .setGameDetail("Classic mode\nAccomplish all pairs of icons within \na limited time.");
-                    // } else if (game_mode == GAME_KING) {
-                    // ((PikaGameScene)
-                    // mEngine.getScene()).setGameDetail("Crazy mode\nThe rest of time will be added \nto next level.");
-                    // } else {
-                    // ((PikaGameScene)
-                    // mEngine.getScene()).setGameDetail("More game\n\nBest game here");
-                    // }
-                    // }
-                    // }
-
-                    // public void onNothingSelected(AdapterView<?> arg0) {
-                    // // TODO Auto-generated method stub
-                    //
-                    // }
-                    // });
-
-                    // Animation slide = AnimationUtils.loadAnimation(Pikachu.this,
-                    // R.anim.slide_in_level_table);
-                    // g.startAnimation(slide);
-
                     break;
                 case VISIBLE_GAME_SELECT:
                     final HorizontalScrollView g1 = (HorizontalScrollView) layout
                             .findViewById(R.id.horizontalScrollView1);
-
-                    // slide = AnimationUtils.loadAnimation(Pikachu.this,
-                    // R.anim.slide_out_level_table);
-
-                    // slide.setAnimationListener(new AnimationListener() {
-
-                    // public void onAnimationStart(Animation animation) {
-                    // TODO Auto-generated method stub
-
-                    // }
-
-                    // public void onAnimationRepeat(Animation animation) {
-                    // TODO Auto-generated method stub
-
-                    // }
-
-                    // public void onAnimationEnd(Animation animation) {
-
                     g1.setVisibility(View.GONE);
-                    // }
-                    // });
-                    // g1.startAnimation(slide);
                     break;
                 case SHOW_LEVEL_SELECT:
                     adView.setVisibility(View.GONE);
                     View level = (View) layout
                             .findViewById(R.id.layout_table_level);
                     if (level == null) {
-                        level = Pikachu.getPikachu().getLayoutInflater()
+                        level = PikachuActivity.getPikachu().getLayoutInflater()
                                 .inflate(R.layout.level_pikachu, null, false);
                         layout.addView(level);
                     }
@@ -1076,45 +931,17 @@ public class Pikachu extends SimpleLayoutGameActivity implements
                         public void onItemClick(AdapterView<?> parent, View v,
                                                 int position, long id) {
                             if (vData.get(position).state >= PikaSaveGamer.LV_UNLOCK) {
-                                Pikachu.getPikachu().detectView(
-                                        Pikachu.VISIBLE_LEVEL_SELECT);
-                                Pikachu.LVL = position + 1;
+                                PikachuActivity.getPikachu().detectView(
+                                        PikachuActivity.VISIBLE_LEVEL_SELECT);
+                                PikachuActivity.LVL = position + 1;
                                 mEngine.setScene(switchScene(SceneType.GAME));
                             }
                         }
                     });
-
-                    // slide = AnimationUtils.loadAnimation(Pikachu.this,
-                    // R.anim.slide_in_level_table);
-                    // level.startAnimation(slide);
-
                     break;
                 case VISIBLE_LEVEL_SELECT:
-
-                    final View g2 = (View) layout
-                            .findViewById(R.id.layout_table_level);
-
-                    // slide = AnimationUtils.loadAnimation(Pikachu.this,
-                    // R.anim.slide_out_level_table);
-
-                    // slide.setAnimationListener(new AnimationListener() {
-
-                    // public void onAnimationStart(Animation animation) {
-                    // TODO Auto-generated method stub
-
-                    // }
-
-                    // public void onAnimationRepeat(Animation animation) {
-                    // TODO Auto-generated method stub
-
-                    // }
-
-                    // public void onAnimationEnd(Animation animation) {
+                    final View g2 = (View) layout.findViewById(R.id.layout_table_level);
                     g2.setVisibility(View.GONE);
-                    // }
-                    // });
-                    // g2.startAnimation(slide);
-
                     break;
                 default:
                     break;
@@ -1122,44 +949,13 @@ public class Pikachu extends SimpleLayoutGameActivity implements
         }
     };
 
-    public Bitmap getBitMapFromAsset(String imagePath) {
-        AssetManager mngr = getAssets();
-        // Create an input stream to read from the asset folder
-        InputStream is = null;
-        try {
-            is = mngr.open(imagePath);
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
-        Bitmap bitmap = null;
-        try {
-            bitmap = BitmapFactory.decodeStream(is);
-
-        } finally {
-            try {
-                is.close();
-                is = null;
-            } catch (IOException e) {
-            }
-        }
-
-        return bitmap;
-    }
-
     @Override
     public boolean onSceneTouchEvent(Scene pScene, TouchEvent pSceneTouchEvent) {
-
+        LogUtils.d("PikachuActivity  onSceneTouchEvent()");
         switch (pSceneTouchEvent.getAction()) {
             case TouchEvent.ACTION_DOWN:
-
-                // this.mEngine.setScene(sceneSplash);
-                // currentScene = SceneType.SPLASH;
                 break;
             case TouchEvent.ACTION_UP:
-                // this.mEngine.setScene(sceneGame);
-                // sceneattachChild(mySprite);
-                // currentScene = SceneType.GAME;
-                // sound.play();
                 break;
             default:
                 break;
@@ -1181,44 +977,11 @@ public class Pikachu extends SimpleLayoutGameActivity implements
     }
 
     public void saveHighScore(int score) {
+        LogUtils.d("PikachuActivity  saveHighScore()  score : " + score);
         if (score > HIGH_SCORE) {
             HIGH_SCORE = score;
             PikaSaveGamer.saveHighScore(HIGH_SCORE);
         }
-    }
-
-    private static Bitmap grab(final int pGrabX, final int pGrabY,
-                               final int pGrabWidth, final int pGrabHeight) {
-        int width = 300;
-        int height = 300;
-        int screenshotSize = width * height;
-        ByteBuffer bb = ByteBuffer.allocateDirect(screenshotSize * 4);
-        bb.order(ByteOrder.nativeOrder());
-        GLES20.glReadPixels(0, 0, width, height, GLES20.GL_RGBA,
-                GLES20.GL_UNSIGNED_BYTE, bb);
-        int pixelsBuffer[] = new int[screenshotSize];
-        bb.asIntBuffer().get(pixelsBuffer);
-        bb = null;
-        Bitmap bitmap = Bitmap.createBitmap(width, height,
-                Bitmap.Config.RGB_565);
-        bitmap.setPixels(pixelsBuffer, screenshotSize - width, -width, 0, 0,
-                width, height);
-        pixelsBuffer = null;
-
-        short sBuffer[] = new short[screenshotSize];
-        ShortBuffer sb = ShortBuffer.wrap(sBuffer);
-        bitmap.copyPixelsToBuffer(sb);
-
-        // Making created bitmap (from OpenGL points) compatible with
-        // Android bitmap
-        for (int i = 0; i < screenshotSize; ++i) {
-            short v = sBuffer[i];
-            sBuffer[i] = (short) (((v & 0x1f) << 11) | (v & 0x7e0) | ((v & 0xf800) >> 11));
-        }
-        sb.rewind();
-        bitmap.copyPixelsFromBuffer(sb);
-
-        return bitmap.copy(Bitmap.Config.ARGB_8888, false);
     }
 
     Bitmap mTmpBitMap;
@@ -1226,19 +989,14 @@ public class Pikachu extends SimpleLayoutGameActivity implements
 
     @Override
     public void captureImage(Bitmap b) {
+        LogUtils.d("PikachuActivity  captureImage()");
         mTmpBitMap = b;
-
-        // Bitmap bmp = BitmapFactory.decodeResource(getResources(),
-        // R.drawable.send_img);
         WXImageObject imgObj = new WXImageObject(mTmpBitMap);
-
         WXMediaMessage msg = new WXMediaMessage();
         msg.mediaObject = imgObj;
-
-        Bitmap thumbBmp = Bitmap.createScaledBitmap(mTmpBitMap, THUMB_SIZE,
-                THUMB_SIZE, true);
+        Bitmap thumbBmp = Bitmap.createScaledBitmap(mTmpBitMap, THUMB_SIZE, THUMB_SIZE, true);
         mTmpBitMap.recycle();
-        msg.thumbData = Util.bmpToByteArray(thumbBmp, true); // 设置缩略�?
+        msg.thumbData = Util.bmpToByteArray(thumbBmp, true);
         SendMessageToWX.Req req = new SendMessageToWX.Req();
         req.transaction = buildTransaction("img");
         req.message = msg;
@@ -1247,8 +1005,8 @@ public class Pikachu extends SimpleLayoutGameActivity implements
     }
 
     private String buildTransaction(final String type) {
-        return (type == null) ? String.valueOf(System.currentTimeMillis())
-                : type + System.currentTimeMillis();
+        LogUtils.d("PikachuActivity  buildTransaction()");
+        return (type == null) ? String.valueOf(System.currentTimeMillis()) : type + System.currentTimeMillis();
     }
 
     @Override

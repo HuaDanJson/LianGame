@@ -24,10 +24,10 @@ public class SlowGallery extends Gallery {
 //	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
 //
 //		// limit the max speed in either direction
-//		// if (velocityX > Pikachu.WIN_DOW_W-300) {
-//		// velocityX = Pikachu.WIN_DOW_W-300;
-//		// } else if (velocityX < Pikachu.WIN_DOW_W-300) {
-//		// velocityX = -(Pikachu.WIN_DOW_W-300f);
+//		// if (velocityX > PikachuActivity.WIN_DOW_W-300) {
+//		// velocityX = PikachuActivity.WIN_DOW_W-300;
+//		// } else if (velocityX < PikachuActivity.WIN_DOW_W-300) {
+//		// velocityX = -(PikachuActivity.WIN_DOW_W-300f);
 //		// }
 //		return super.onFling(e1, e2, velocityX, velocityY);
 //	}

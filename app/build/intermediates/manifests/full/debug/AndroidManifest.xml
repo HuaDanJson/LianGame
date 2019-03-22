@@ -32,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.yottamobile.doraemon.Pikachu"
+            android:name="com.yottamobile.doraemon.PikachuActivity"
             android:label="@string/title_activity_pikachu"
             android:screenOrientation="landscape" >
         </activity>

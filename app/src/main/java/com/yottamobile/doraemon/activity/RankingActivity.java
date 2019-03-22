@@ -91,19 +91,7 @@ public class RankingActivity extends BaseActivity {
             String time = sdr1.format(new Date(resultDaoList.get(position).currentTimeAsId));
             myViewHolder.mTime.setText("游戏时间：" + time);
             myViewHolder.mScore.setText("游戏得分：" + resultDaoList.get(position).getScore());
-            switch (resultDaoList.get(position).getType()) {
-                case 1:
-                    myViewHolder.mType.setText("游戏等级：初级模式");
-                    break;
-                case 2:
-                    myViewHolder.mType.setText("游戏等级：中级模式");
-                    break;
-                case 3:
-                    myViewHolder.mType.setText("游戏等级：高级模式");
-                    break;
-                default:
-                    break;
-            }
+            myViewHolder.mType.setText("游戏等级 : " + resultDaoList.get(position).getType());
             return convertView;
         }
 

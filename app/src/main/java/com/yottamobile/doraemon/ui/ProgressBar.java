@@ -1,15 +1,15 @@
 package com.yottamobile.doraemon.ui;
 
+import android.opengl.GLES20;
+
+import com.yottamobile.doraemon.PikachuActivity;
+
 import org.andengine.engine.camera.Camera;
 import org.andengine.engine.camera.hud.HUD;
 import org.andengine.entity.sprite.Sprite;
 import org.andengine.opengl.texture.region.TextureRegion;
 import org.andengine.opengl.util.GLState;
 import org.andengine.opengl.vbo.VertexBufferObjectManager;
-
-import com.yottamobile.doraemon.Pikachu;
-
-import android.opengl.GLES20;
 
 public class ProgressBar extends HUD {
 	private final Sprite mBackgroundRectangle;
@@ -37,9 +37,9 @@ public class ProgressBar extends HUD {
 				float clipW =  (percent * getWidth()) / 100;
 				float clipH = getHeight();
 
-//				System.out.println(Pikachu.pio.);
+//				System.out.println(PikachuActivity.pio.);
 				
-				GLES20.glScissor((int)((getX() + clipX)*Pikachu.scaleX), (int) ((pCamera.getHeight() - ((getY() + clipY) + clipH))*Pikachu.scaleY), (int)(clipW*Pikachu.scaleX), (int)(clipH*Pikachu.scaleY));//
+				GLES20.glScissor((int)((getX() + clipX)* PikachuActivity.scaleX), (int) ((pCamera.getHeight() - ((getY() + clipY) + clipH))* PikachuActivity.scaleY), (int)(clipW* PikachuActivity.scaleX), (int)(clipH* PikachuActivity.scaleY));//
 
 				super.onManagedDraw(glState, pCamera);
 
@@ -55,8 +55,9 @@ public class ProgressBar extends HUD {
 	}
 
 	public void setProgress(final float pProgress) {
-		if (pProgress < 0)
+		if (pProgress < 0) {
 			this.mProgressRectangle.setWidth(0);
+		}
 		this.percent = pProgress;
 		// this.mProgressRectangle.setWidth(this.mPixelsPerPercentRatio *
 		// pProgress);
